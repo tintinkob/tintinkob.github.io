@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Images </title>
+	<link rel="stylesheet" href="navbar.css">
+	
+	<style>
+	body {
+	  margin: 0;
+	}
+	
+	*{
+	  box-sizing: border-box;
+	}
+	
+	.row {
+	  display: flex;
+	  flex-wrap: wrap;
+	  padding: 0 4px;
+	}
+	
+	.column {
+	  flex: 25%;
+	}
+	
+	.column img {
+	  margin-top: 8px;
+	  width: 100%;
+	  vertical-align: middle;
+	}
+	
+	@media (max-width: 500px) {
+	  .column {
+		flex: 50%;
+	  }
+	}
+	@media (max-width: 1000px) {
+	  .column {
+		flex: 100%;
+	  }
+	}
+	
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			gap: 20px;
+		}
+
+		.item {
+			position: relative;
+			overflow: hidden;
+			width: 300px;
+			height: 300px;
+		}
+
+		.item img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			transition: transform 0.3s ease;
+		}
+
+		.item:hover img {
+			transform: scale(1.1);
+		}
+
+		.item .overlay {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: rgba(0, 0, 0, 0.5);
+			color: #fff;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			opacity: 0;
+			transition: opacity 0.3s ease;
+			cursor: pointer;
+		}
+
+		.item:hover .overlay {
+			opacity: 1;
+		}
+	</style>
+</head>
+<body>
+    <nav class="navbar">
+        <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
+            = IStock
+        </label>
+        <a href="#" class="logo">
+        </a>
+        <input type="checkbox" id="chkToggle"></input>
+        <ul class="main-nav" id="js-menu" >
+            <li>
+                <a href="file:///Users/tinakobari/Desktop/project/home.html" class="nav-links">Home</a>
+            </li>
+            <li>
+                <a href="file:///Users/tinakobari/Desktop/project/imagesPages.html" class="nav-links">Products</a>
+            </li>
+            <li>
+                <a href="file:///Users/tinakobari/Desktop/project/about%20us.html" class="nav-links">About Us</a>
+            </li>
+            <li>
+                <a href="file:///Users/tinakobari/Desktop/project/contact%20form.html" class="nav-links">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+	<br>
+	<div class="container row">
+		<div class="item column">
+			<a href="file:///Users/tinakobari/Desktop/project/detail%20images.html">
+				<img src="https://picsum.photos/id/52/200/300" alt="Image 1">
+				<div class="overlay">
+					<h3>Image 1</h3>
+					<p>Price: $10</p>
+				</div>
+			</a>
+		</div>
+		<div class="item column">
+			<a href="file:///Users/tinakobari/Desktop/project/image%20detail2.html">
+				<img src="https://picsum.photos/id/54/200/300" alt="Image 2">
+				<div class="overlay">
+					<h3>Image 2</h3>
+					<p>Price: $20</p>
+				</div>
+			</a>
+		</div>
+		<div class="item column">
+			<a href="file:///Users/tinakobari/Desktop/project/image%20detail3.html">
+				<img src="https://picsum.photos/id/42/200/300" alt="Image 3">
+				<div class="overlay">
+					<h3>Image 3</h3>
+					<p>Price: $30</p>
+				</div>
+			</a>
+		</div>
+		<div class="item column">
+			<a href="file:///Users/tinakobari/Desktop/project/image%20detail4.html">
+				<img src="https://picsum.photos/id/43/200/300" alt="Image 1">
+				<div class="overlay">
+					<h3>Image 1</h3>
+					<p>Price: $10</p>
+				</div>
+			</a>
+		</div>
+		<div class="item column">
+			<a href="file:///Users/tinakobari/Desktop/project/image%20detail5.html">
+				<img src="https://picsum.photos/id/120/200/300" alt="Image 2">
+				<div class="overlay">
+					<h3>Image 2</h3>
+					<p>Price: $20</p>
+				</div>
+			</a>
+		</div>
+		<div class="item column">
+			<a href="file:///Users/tinakobari/Desktop/project/image%20detail6.html">
+				<img src="https://picsum.photos/id/15/200/300" alt="Image 3">
+				<div class="overlay">
+					<h3>Image 3</h3>
+					<p>Price: $30</p>
+				</div>
+			</a>
+		</div>
+	</div>
+</body>
+</html>
+
+	
+

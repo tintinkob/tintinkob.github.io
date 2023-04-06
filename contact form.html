@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="navbar.css">
+  <title>Contact Page</title>
+  <style>
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    form {
+      width: 80%;
+      max-width: 500px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 0.5rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-bottom: 1rem;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      height: 10rem;
+    }
+
+    button {
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 4px;
+      background-color: #007bff;
+      color: #fff;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
+        = IStock
+    </label>
+    <a href="#" class="logo">
+    </a>
+    <input type="checkbox" id="chkToggle"></input>
+    <ul class="main-nav" id="js-menu" >
+        <li>
+            <a href="file:///Users/tinakobari/Desktop/project/home.html" class="nav-links">Home</a>
+        </li>
+        <li>
+            <a href="file:///Users/tinakobari/Desktop/project/imagesPages.html" class="nav-links">Products</a>
+        </li>
+        <li>
+            <a href="file:///Users/tinakobari/Desktop/project/about%20us.html" class="nav-links">About Us</a>
+        </li>
+        <li>
+            <a href="file:///Users/tinakobari/Desktop/project/contact%20form.html" class="nav-links">Contact Us</a>
+        </li>
+    </ul>
+</nav>
+  <div class="container">
+    <form>
+      <div class="field">
+        <label class="label">First Name</label>
+        <div class="control">
+          <input class="input" type="text" placeholder="Name">
+        </div>
+      </div>
+      
+      <div class="field">
+        <label class="label">Username</label>
+        <div class="control has-icons-left has-icons-right">
+          <input class="input is-success" type="text" placeholder="Username" >
+          <span class="icon is-small is-left">
+            <i class="fas fa-user"></i>
+          </span>
+          <span class="icon is-small is-right">
+            <i class="fas fa-check"></i>
+          </span>
+      <div class="field">
+        <label class="label">Email</label>
+        <div class="control has-icons-left has-icons-right">
+          <input class="input is-danger" type="email" placeholder="Email" value="image@gmail.com">
+          <span class="icon is-small is-left">
+            <i class="fas fa-envelope"></i>
+          </span>
+          <span class="icon is-small is-right">
+            <i class="fas fa-exclamation-triangle"></i>
+          </span>
+        </div>
+      </div>
+      <div class="field">
+        <label class="label">Subject</label>
+        <div class="control">
+          <div class="select">
+            <select>
+              <option>Select ...</option>
+              <option>All</option>
+              <option>Foods</option>
+              <option>Flowers</option>
+              <option>Cars</option>
+              <option>Street</option>
+              <option>Business</option>
+              <option>Home</option>
+              <option>Arts</option>
+            </select>
+          </div>
+        </div>
+      </div> 
+      <div class="field">
+        <label class="label">Message</label>
+        <div class="control">
+          <textarea class="textarea" placeholder="Message"></textarea>
+        </div>
+      </div> 
+      <div class="field">
+        <div class="control">
+          <label class="checkbox">
+            <div>
+              I agree to the <a href="#">terms and conditions </a>
+            </div>
+          </label>
+        </div>
+      </div>
+    <br>
+      <div class="field is-grouped">
+        <div class="control">
+          <button class="button is-link">Submit</button>
+        </div>
+      </div>
+    </form>
+    <div>
+    </body>
+    </html>

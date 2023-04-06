@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image #2</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="navbar.css">
+	<style>
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			padding: 10px;
+		}
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+		.details {
+			flex: 1;
+			margin: 10px;
+		}
+		h1 {
+			text-align: center;
+			padding: 10px;
+		}
+		p {
+			margin: 10px 0;
+		}
+		button {
+			display: block;
+			margin: 10px auto;
+		}
+		@media screen and (min-width: 768px) {
+			img {
+				max-width: 50%;
+				margin-right: 20px;
+			}
+			.details {
+				flex: 1;
+				margin-left: 20px;
+			}
+			h1 {
+				text-align: left;
+			}
+		}
+	</style>
+</head>
+<body>
+    <nav class="navbar">
+        <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
+            = IStock
+        </label>
+        <a href="#" class="logo">
+        </a>
+        <input type="checkbox" id="chkToggle"></input>
+        <ul class="main-nav" id="js-menu" >
+            <li>
+                <a href="file:///Users/tinakobari/Desktop/project/home.html" class="nav-links">Home</a>
+            </li>
+            <li>
+                <a href="file:///Users/tinakobari/Desktop/project/imagesPages.html" class="nav-links">Products</a>
+            </li>
+            <li>
+                <a href="file:///Users/tinakobari/Desktop/project/about%20us.html" class="nav-links">About Us</a>
+            </li>
+            <li>
+                <a href="file:///Users/tinakobari/Desktop/project/contact%20form.html" class="nav-links">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+	<h1>Image #2</h1>
+	<div class="container">
+		<img src="https://picsum.photos/id/54/800/600" alt="Image 2">
+		<div class="details">
+			<p>Price: $10</p>
+			<p>Resolution: 800 x 600</p>
+			<p>Size: 2 MB</p>
+			<button>Buy Now</button>
+		</div>
+	</div>
+</body>
+</html>
