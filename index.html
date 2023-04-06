@@ -1,1 +1,107 @@
-Hello this is my image company site
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+    <title>Home Page</title>
+    <style> 
+
+        div {
+          
+            text-align: justify;
+            text-justify: inter-word;
+        }
+        .container {
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            background-color: rgb(139, 189, 139);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            animation: change-image 4s infinite;
+        }
+
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+
+        @keyframes change-image {
+            0% {
+                content: url('https://picsum.photos/1920/1080/?blur');
+            }
+            50% {
+                content: url('https://picsum.photos/1920/1080/?blur');
+            }
+            100% {
+                content: url('https://picsum.photos/1920/1080/?blur');
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
+            = IStock
+        </label>
+        <a href="#" class="logo">
+        </a>
+        <input type="checkbox" id="chkToggle"></input>
+        <ul class="main-nav" id="js-menu" >
+            <li>
+                <a href="file:///Users/tinakobari/Desktop/project/home.html" class="nav-links">Home</a>
+            </li>
+            <li>
+                <a href="file:///Users/tinakobari/Desktop/project/imagesPages.html" class="nav-links">Products</a>
+            </li>
+            <li>
+                <a href="file:///Users/tinakobari/Desktop/project/about%20us.html" class="nav-links">About Us</a>
+            </li>
+            <li>
+                <a href="file:///Users/tinakobari/Desktop/project/contact%20form.html" class="nav-links">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+    <div>
+        <div class="container">
+            <img src="https://picsum.photos/1920/1080/?blur" alt="Picsum images" >
+            <div class="centered">
+                <h1>Welcome to Images Home</h1>
+                <br>
+                <p>Our website provides a large selection of high-quality images 
+                   that you can purchase for personal or business use. Browse through our 
+                   available images or email us if you require a custom image.
+                </p>
+
+</div>
+<br>
+<div class="container">
+    <img src="https://picsum.photos/200/300/?blur" alt="Picsum images" >
+</div>
+<br>
+</div>
+</body>
+</html>
+
+	
+
+
+
+
